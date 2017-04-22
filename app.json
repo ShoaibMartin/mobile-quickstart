@@ -1,0 +1,11 @@
+{
+  "name": "Twilio Mobile Quickstart",
+  "description": "A simple Python server to distribute capability tokens and route calls for your mobile app",
+  "repository": "https://github.com/ShoaibMartin/mobile-quickstart",
+  "logo": "https://static1.twilio.com/packages/company/img/logos_icon_round.png",
+  "keywords": [
+    "twilio",
+    "client",
+    "mobile"
+  ]
+}
