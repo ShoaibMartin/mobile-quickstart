@@ -64,8 +64,6 @@ def call():
 def welcome():
   resp = twilio.twiml.Response()
   resp.say("hello")
-  with resp.gather(finishOnKey=4) as g:
-      g.say("world")
   print str(resp)
 
 if __name__ == "__main__":
