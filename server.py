@@ -62,9 +62,11 @@ def call():
 
 @app.route('/', methods=['GET', 'POST'])
 def welcome():
-  resp = twilio.twiml.Response()
-  resp.play("https://api.twilio.com/cowbell.mp3", loop=1)
-  return str(resp)
+  r = twilio.twiml.Response()
+  r.say("hello")
+  with r.gather(finishOnKey=4) as g:
+      g.say("world")
+  print str(r)
 
 if __name__ == "__main__":
   port = int(os.environ.get("PORT", 5000))
