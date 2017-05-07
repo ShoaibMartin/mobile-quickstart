@@ -63,8 +63,8 @@ def call():
 @app.route('/', methods=['GET', 'POST'])
 def welcome():
   resp = twilio.twiml.Response()
-  resp.say("hello")
-  print str(resp)
+  resp.say("Welcome to Twilio")
+  return str(resp)
 
 if __name__ == "__main__":
   port = int(os.environ.get("PORT", 5000))
