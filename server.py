@@ -64,6 +64,8 @@ def call():
 def welcome():
   resp = twilio.twiml.Response()
   resp.say("Welcome to Twilio")
+  with resp.gather(finishOnKey=4) as g:
+    g.say("world")
   return str(resp)
 
 if __name__ == "__main__":
