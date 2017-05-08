@@ -44,7 +44,7 @@ def call():
   resp = twilio.twiml.Response()
   from_value = request.values.get('From')
   to = request.values.get('To')
-  resp.say("testttting  " + to)
+  resp.say("testttting")
 """  if not (from_value and to):
     resp.say("Invalid request")
     return str(resp)
